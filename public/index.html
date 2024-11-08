@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Neighborhood Posts</title>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="postForm">
+        <div class="form-group">
+            <label for="neighbourhood">Neighbourhood:</label>
+            <input type="text" id="neighbourhood" name="neighbourhood" required>
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="post">Post:</label>
+            <textarea id="post" name="post" required></textarea>
+        </div>
+        <button type="submit">Submit Post</button>
+    </form>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
